@@ -8,11 +8,11 @@ Se proporciona un JSON que contiene una lista de líneas, cada una de las cuales
 
 #### Tablas Involucradas:
 1. presupuestos:
-   - id (NUMBER): Identificador único del presupuesto.
+   - id (VARCHAR2): Identificador único del presupuesto.
    - nombre (VARCHAR2): Nombre del presupuesto.
 
 2. linea_presupuestos:
-   - id (NUMBER): Identificador único de la línea de presupuesto.
+   - id (VARCHAR2): Identificador único de la línea de presupuesto.
    - descripcion (VARCHAR2): Descripción de la línea de presupuesto.
    - id_presupuesto (NUMBER): Identificador del presupuesto al que pertenece la línea.
    - id_producto (NUMBER): Identificador del producto asociado a la línea.
@@ -36,10 +36,10 @@ El JSON tiene la siguiente estructura:
       "linea": "000NOMBRE_PRESUPUESTO1"
     },
     {
-      "linea": "001LINEA_PRESUPUESTO11UNA DESCRIPCION DE LA LINEA PARA MAPEAR       PRODUCTO687  573 "
+      "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD001       573 "
     },
     {
-      "linea": "001LINEA_PRESUPUESTO12UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     PRODUCTO6232 57  "
+      "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD002       57  "
     },
     ...
   ]
@@ -87,28 +87,28 @@ BEGIN
           "linea": "000NOMBRE_PRESUPUESTO1"
         },
         {
-          "linea": "001LINEA_PRESUPUESTO11UNA DESCRIPCION DE LA LINEA PARA MAPEAR       PRODUCTO687  573 "
+          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD003       573 "
         },
         {
-          "linea": "001LINEA_PRESUPUESTO12UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     PRODUCTO6232 57  "
+          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD004       57  "
         },
         {
           "linea": "000NOMBRE_PRESUPUESTO2"
         },
         {
-          "linea": "001LINEA_PRESUPUESTO21UNA DESCRIPCION DE LA LINEA PARA MAPEAR 3     PRODUCTO6D87 573 "
+          "linea": "001NOMBRE_PRESUPUESTO2UNA DESCRIPCION DE LA LINEA PARA MAPEAR 3     COD005       573 "
         },
         {
-          "linea": "001LINEA_PRESUPUESTO22UNA DESCRIPCION DE LA LINEA PARA MAPEAR 4     PRODUCTO6232 5734"
+          "linea": "001NOMBRE_PRESUPUESTO2UNA DESCRIPCION DE LA LINEA PARA MAPEAR 4     COD006       5734"
         },
         {
           "linea": "000NOMBRE_PRESUPUESTO3"
         },
         {
-          "linea": "001LINEA_PRESUPUESTO31UNA DESCRIPCION DE LA LINEA PARA MAPEAR 3     PRODUCTO6D8ss5756"
+          "linea": "001NOMBRE_PRESUPUESTO3UNA DESCRIPCION DE LA LINEA PARA MAPEAR 3     COD007       "
         },
         {
-          "linea": "001LINEA_PRESUPUESTO32UNA DESCRIPCION DE LA LINEA PARA MAPEAR 4     PRODUCTO12rr 5765"
+          "linea": "001NOMBRE_PRESUPUESTO3UNA DESCRIPCION DE LA LINEA PARA MAPEAR 4     COD008       5765"
         }
       ]
     }
