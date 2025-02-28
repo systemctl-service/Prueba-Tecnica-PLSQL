@@ -71,9 +71,11 @@ El JSON tiene la siguiente estructura:
 4. Manejo de Errores: La función debe manejar posibles errores, como formatos incorrectos o datos faltantes, y registrar mensajes de depuración en la tabla debug.
 
 #### Consideraciones Adicionales:
-- Asegúrate de que los nombres de los presupuestos y los códigos de los productos sean únicos.
-- Si un presupuesto o producto ya existe en la base de datos, no se debe duplicar.
-- La función debe ser eficiente y manejar correctamente grandes volúmenes de datos.
+- Si un presupuesto ya existe en la base de datos, no se debe duplicar.
+- En el codigo SQL para montar el entorno en el que realizaran la prueba se les dispone una funcion
+P_INS_DEBUG, es requisito que utilizen esta funcion para debugear (consultar estados de variables en 
+tiempo de ejecucion, revisar y reportar errores, etc...). Por lo mismo, se les recomienda evitar usar 
+cosas como DBMS_OUPUT.PUT_LINE. Ya que en el entorno real de trabajo no es posible utilizarlo.
 
 #### Ejemplo de Uso:
 ```sql
@@ -124,9 +126,5 @@ END;
 - Eficiencia en el procesamiento del JSON.
 - Correcta inserción de datos en las tablas.
 - Uso adecuado de la tabla debug para registrar mensajes de depuración.
+- legibilidad del codigo, buena redaccion y documentacion.
 
-#### Nota:
-En el codigo SQL para montar el entorno en el que realizaran la prueba se les dispone una funcion
-P_INS_DEBUG, es requisito que utilizen esta funcion para debugear (consultar estados de variables en 
-tiempo de ejecucion, revisar y reportar errores, etc...). Por lo mismo, se les recomienda evitar usar 
-cosas como DBMS_OUPUT.PUT_LINE. Ya que en el entorno real de trabajo no es posible utilizarlo.
