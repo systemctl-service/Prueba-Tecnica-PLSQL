@@ -1,6 +1,6 @@
 create table presupuestos (  
     id number(10) generated always as identity primary key,  
-    nombre varchar2(100)  
+    nombre varchar2(100) unique
 );  
   
 create table linea_presupuestos (  
@@ -15,7 +15,7 @@ create table productos (
     id number(10) generated always as identity primary key,  
     nombre varchar2(100),  
     precio number(10, 2),  
-    cod_articulo varchar2(255)  
+    cod_articulo varchar2(255) unique
 );  
   
 create table debug (  
