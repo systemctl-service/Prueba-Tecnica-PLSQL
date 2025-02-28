@@ -8,14 +8,14 @@ Se proporciona un JSON que contiene una lista de líneas, cada una de las cuales
 
 #### Tablas Involucradas:
 1. presupuestos:
-   - id (VARCHAR2): Identificador único del presupuesto.
+   - id (NUMBER): Identificador único del presupuesto.
    - nombre (VARCHAR2): Nombre del presupuesto.
 
 2. linea_presupuestos:
-   - id (VARCHAR2): Identificador único de la línea de presupuesto.
+   - id (NUMBER): Identificador único de la línea de presupuesto.
    - descripcion (VARCHAR2): Descripción de la línea de presupuesto.
-   - id_presupuesto (NUMBER): Identificador del presupuesto al que pertenece la línea.
-   - id_producto (NUMBER): Identificador del producto asociado a la línea.
+   - nombre_presupuesto (VARCHAR2): Nombre del presupuesto al que pertenece la línea.
+   - cod_articulo (VARCHAR2): Código del artículo del producto asociado a la línea.
    - cantidad (NUMBER): Cantidad del producto en la línea.
 
 3. productos:
@@ -126,4 +126,7 @@ END;
 - Uso adecuado de la tabla debug para registrar mensajes de depuración.
 
 #### Nota:
-No es necesario implementar el código, solo redactar el enunciado de la prueba técnica.
+En el codigo SQL para montar el entorno en el que realizaran la prueba se les dispone una funcion
+P_INS_DEBUG, es requisito que utilizen esta funcion para debugear (consultar estados de variables en 
+tiempo de ejecucion, revisar y reportar errores, etc...). Por lo mismo, se les recomienda evitar usar 
+cosas como DBMS_OUPUT.PUT_LINE. Ya que en el entorno real de trabajo no es posible utilizarlo.
