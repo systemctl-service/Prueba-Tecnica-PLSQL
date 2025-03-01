@@ -33,17 +33,17 @@ El JSON tiene la siguiente estructura:
 {
   "data" : [
     {
-          "linea": "000NOMBRE_PRESUPUESTO1"
-        },
-        {
-          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD003       573 "
-        },
-        {
-          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD004       57  "
-        },
-        {
-          "linea": "000NOMBRE_PRESUPUESTO2"
-        },
+       "linea": "000NOMBRE_PRESUPUESTO1"
+     },
+     {
+       "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD003       573 "
+     },
+     {
+       "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD004       57  "
+     },
+     {
+       "linea": "000NOMBRE_PRESUPUESTO2"
+     },
     ...
   ]
 }
@@ -54,14 +54,14 @@ El JSON tiene la siguiente estructura:
 
 2. SI TIPO DE LINEA ES 000 => DESCRIBE UN PRESUPUESTO:
 
-  - NOMBRE DEL PRESUPUESTO => Empieza desde el caracter 4 al 23
+  - NOMBRE DEL PRESUPUESTO => Empieza desde el caracter 4 al 22
 
 3. SI TIPO DE LINEA ES 001 => DESCRIBE UNA LINEA DE PRESUPUESTO:
 
-  - NOMBRE DEL PRESUPUESTO => Empieza desde el caracter 4 al 23
-  - DESCRIPCION DE LA LINEA => Empieza desde el caracter 24 al 70
-  - CODIGO DEL PRODUCTO => Empieza desde el caracter 71 al 84
-  - CANTIDAD => Empieza desde el caracter 85 al 89
+  - NOMBRE DEL PRESUPUESTO => Empieza desde el caracter 4 al 22
+  - DESCRIPCION DE LA LINEA => Empieza desde el caracter 23 al 68
+  - CODIGO DEL PRODUCTO => Empieza desde el caracter 69 al 81
+  - CANTIDAD => Empieza desde el caracter 82 al 86
 
 #### Requisitos de la Función F_LEER_JSON:
 1. Entrada: La función debe recibir un parámetro de tipo CLOB que contenga el JSON.
