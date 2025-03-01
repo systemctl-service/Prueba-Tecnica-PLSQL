@@ -33,14 +33,17 @@ El JSON tiene la siguiente estructura:
 {
   "data" : [
     {
-      "linea": "000NOMBRE_PRESUPUESTO1"
-    },
-    {
-      "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD001       573 "
-    },
-    {
-      "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD002       57  "
-    },
+          "linea": "000NOMBRE_PRESUPUESTO1"
+        },
+        {
+          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR       COD003       573 "
+        },
+        {
+          "linea": "001NOMBRE_PRESUPUESTO1UNA DESCRIPCION DE LA LINEA PARA MAPEAR 2     COD004       57  "
+        },
+        {
+          "linea": "000NOMBRE_PRESUPUESTO2"
+        },
     ...
   ]
 }
